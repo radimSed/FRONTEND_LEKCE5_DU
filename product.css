@@ -1,0 +1,160 @@
+:root {
+  --radius: 5px;
+
+  --border-color: #000;
+  --info-color: #808080;
+  --delivery-color: #32840c;
+  --price-section-bg-color: #ee121240;
+  --button-bg-color: #d9d9d9;
+  --delivery-section-bg-color: #7fcb5b61;
+  --bestseller-label-bg-color: #fffa87;
+  --label-height: 30px;
+  --red-white-color: rgb(241, 241, 241);
+  --red-white-bg-color: #ee1212;
+
+  --general-margin: 20px;
+}
+
+.card-section {
+  background-color: #e4f5e5;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.product-card1,
+.product-card2,
+.product-card3 {
+  border: 1px solid var(--border-color);
+  width: 400px;
+  position: relative;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+}
+
+.title {
+  margin: 15px;
+}
+
+.description {
+  margin: 0 var(--general-margin);
+}
+
+.info {
+  color: var(--info-color);
+  text-decoration: underline;
+  margin: 0 var(--general-margin);
+}
+
+.price-section {
+  position: relative;
+  background-color: var(--price-section-bg-color);
+  margin: var(--general-margin);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.saving {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: var(--button-bg-color);
+  border-radius: var(--radius);
+}
+
+.delivery-section {
+  position: relative;
+  margin: var(--general-margin);
+  padding: 20px 10px;
+  background-color: var(--delivery-section-bg-color);
+  border-radius: var(--radius);
+}
+
+.delivery-text {
+  color: var(--delivery-color);
+  font-weight: bold;
+}
+
+.delivery-info {
+  position: absolute;
+  right: var(--general-margin);
+  color: var(--delivery-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.bestseller-label {
+  width: 120px;
+  height: var(--label-height);
+  line-height: var(--label-height);
+  position: absolute;
+  top: 20px;
+  background-color: var(--bestseller-label-bg-color);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  text-align: center;
+  font-weight: bold;
+}
+
+.product-of-the-year-label {
+  top: 70px;
+  height: var(--label-height);
+  line-height: var(--label-height);
+  position: absolute;
+
+  background-color: var(--red-white-bg-color);
+  width: 200px;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  text-align: center;
+  font-weight: bold;
+  color: var(--red-white-color);
+}
+
+.discount-label {
+  position: absolute;
+  top: var(--general-margin);
+  right: var(--general-margin);
+  text-align: center;
+  background-color: var(--red-white-bg-color);
+  color: var(--red-white-color);
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.product-image-container {
+  height: 350px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-card1,
+.product-card3 {
+  .product-of-the-year-label {
+    display: none;
+  }
+}
